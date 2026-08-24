@@ -1,0 +1,577 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#login-btn {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+    border: 2px solid transparent;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+#login-btn:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#nav-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+#nav-options li {
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+#nav-options li:hover {
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.sect1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    margin-left: 10%;
+    position: relative;
+    overflow: hidden;
+    height: 540px;
+}
+
+#sect1-left h1 {
+    font-size: 45px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+#sect1-left p {
+    color: hsl(0, 0%, 50%);
+    margin: 30px 0px;
+    line-height: 1.5;
+}
+
+#hero-btns {
+    width: auto;
+    display: flex;
+    gap: 20px;
+}
+
+#sect1-left button {
+    width: 30%;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px hsl(0, 0%, 90%);
+}
+
+#chrome-btn {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#chrome-btn:hover {
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    cursor: pointer;
+    color: hsl(231, 69%, 60%);
+}
+
+#firefox-btn {
+    transition: all 0.3s ease;
+}
+
+#firefox-btn:hover {
+    border: 2px solid hsl(229, 31%, 21%);
+    background-color: hsl(0, 0%, 97%);
+    color: hsl(229, 31%, 21%);
+    cursor: pointer;
+}
+
+#sect1-right {
+    width: 100%;
+    z-index: 100;
+}
+
+#sect1-right svg {
+    margin-top: 30px;
+}
+
+.blue-bg {
+    position: absolute;
+    width: 650px;
+    height: 340px;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 400px 0px 0px 400px;
+    left: 60%;
+    top: 35%;
+}
+
+.sect2 {
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.sect2 h2,
+.sect2 p {
+    text-align: center;
+}
+
+.sect2 h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#sect2-text {
+    color: hsl(0, 0%, 50%);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.feature-btns {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-btns button {
+    padding: 20px;
+    font-size: 16px;
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid hsl(0, 0%, 97%);
+    transition: all 0.2s ease;
+    margin-bottom: 40px;
+}
+
+.feature-btns button:hover {
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    gap: 100px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.feature[hidden] {
+    display: none;
+}
+
+.feature p {
+    color: hsl(0, 0%, 50%);
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.feature h2 {
+    text-align: left;
+}
+
+.ft-image {
+    z-index: 100;
+}
+
+#blue-bg-ft1 {
+    top: 20%;
+    left: -15%;
+    border-radius: 0px 400px 400px 0px;
+}
+
+#blue-bg-ft2 {
+    top: 20%;
+    left: -15%;
+    border-radius: 0px 400px 400px 0px;
+}
+
+#blue-bg-ft3 {
+    top: 20%;
+    left: -15%;
+    border-radius: 0px 400px 400px 0px;
+}
+
+#ft-image2 , #ft-image3{
+    margin-left: 80px;
+}
+
+
+.more-info-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: hsl(0, 0%, 97%);
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.more-info-btn:hover {
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    cursor: pointer;
+    color: hsl(231, 69%, 60%);
+}
+
+.sect3 {
+    margin-bottom: 10%;
+}
+
+.sect3 h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#sect3-text {
+    text-align: center;
+    color: hsl(0, 0%, 50%);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.extensions-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.extension {
+    background-color: white;
+    box-shadow: 0px 0px 10px hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    border-radius: 5px;
+}
+
+.extension img {
+    margin-bottom: 20px;
+}
+
+.extension h3 {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.extension p {
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 40px;
+}
+
+.extension button {
+    background-color: hsl(231, 69%, 60%);
+    color: hsl(0, 0%, 97%);
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px hsl(0, 0%, 90%);
+    transition: all 0.3s ease;
+}
+
+.extension button:hover {
+    background-color: hsl(0, 0%, 97%);
+    border: 2px solid hsl(231, 69%, 60%);
+    cursor: pointer;
+    color: hsl(231, 69%, 60%);
+}
+
+#ext2 {
+    margin-top: 70px;
+}
+
+#ext3 {
+    margin-top: 140px;
+}
+
+.bg-dots-box {
+    width: 100%;
+}
+
+.sect4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 8%;
+}
+
+.sect4 h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sect4-text {
+    color: hsl(0, 0%, 50%);
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+hr {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#detail1 {
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+details {
+    padding: 20px 0px;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.1s ease;
+}
+
+summary:hover {
+    cursor: pointer;
+    color: hsl(0, 94%, 66%);
+}
+
+details p {
+    margin-top: 30px;
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    line-height: 2;
+}
+
+details svg {
+    transition: all 0.3s ease;
+}
+
+details[open] summary svg {
+    transform: rotate(180deg);
+}
+
+details svg path {
+    transition: all 0.3s ease;
+}
+
+details[open] svg path {
+    stroke: hsl(0, 94%, 66%);
+}
+
+#sect4-info-btn {
+    margin-top: 50px;
+}
+
+.sect5 {
+    background-color: hsl(231, 69%, 60%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    color: hsl(0, 0%, 97%);
+}
+
+#sect5-text {
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#sect5-h2 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sect5-lower {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+form input {
+    width: 300px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+.error {
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+}
+
+form input::placeholder {
+    color: hsl(0, 0%, 90%);
+}
+
+.error-input {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+#error-message {
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#contact-us-btn {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 5px;
+    width: auto;
+    padding: 15px 20px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    align-self: baseline;
+    transition: all 0.3s ease;
+}
+
+#contact-us-btn:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+footer {
+    background-color: hsl(229, 31%, 21%);
+    color: hsl(0, 0%, 90%);
+    padding: 30px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-left ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+
+.footer-left li {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer li,
+footer svg path {
+    transition: all 0.2s ease;
+}
+
+footer li:hover,
+footer svg:hover path {
+    color: hsl(0, 94%, 66%);
+    fill: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
