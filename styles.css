@@ -508,6 +508,16 @@ form input::placeholder {
     border-radius: 5px;
 }
 
+.input-wrapper{
+    position: relative;
+}
+
+#error-icon{
+    position: absolute;
+    top: 19%;
+    right: 4%
+}
+
 #contact-us-btn {
     background-color: hsl(0, 94%, 66%);
     color: white;

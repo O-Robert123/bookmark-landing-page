@@ -2,21 +2,25 @@ const emailInput = document.querySelector('form input')
 const contactUsBtn = document.querySelector('#contact-us-btn')
 const errorMessage = document.querySelector('#error-message')
 const emailContainer = document.querySelector('form div')
+const errorIcon = document.querySelector('#error-icon')
 contactUsBtn.addEventListener('click', function (event) {
     console.log(emailInput.validity.valid)
     if (!emailInput.validity.valid) {
         event.preventDefault()
         errorMessage.hidden = false
+        errorIcon.hidden = false
         emailContainer.classList.add('error')
         emailInput.classList.add('error-input')
         emailInput.addEventListener('input', function () {
             if (emailInput.validity.valid) {
                 errorMessage.hidden = true
+                errorIcon.hidden = true
                 emailContainer.classList.remove('error')
                 emailInput.classList.remove('error-input')
             }
             else {
                 errorMessage.hidden = false
+                errorIcon.hidden = false
                 emailContainer.classList.add('error')
                 emailInput.classList.add('error-input')
             }
@@ -37,16 +41,6 @@ ftBtns.forEach((btn, index) => {
             index === ftindex? ft.hidden = false: ft.hidden = true
             btn
             console.log(index, ftindex)
-        })
-    })
-})
-
-const faqs = document.querySelector('details')
-const summaries = document.querySelector('summary')
-summaries.forEach(s => {
-    s.addEventListener('click', function(){
-        summaries.forEach(smry => {
-            smry.parentElement.open = false
         })
     })
 })
