@@ -29,10 +29,24 @@ const ftDivs = document.querySelectorAll('.sect2 .feature')
 console.log(ftBtns, ftDivs)
 ftBtns.forEach((btn, index) => {
     btn.addEventListener('click', function(){
+        ftBtns.forEach(bt => {
+            bt.classList.remove('orange')
+            this.classList.add('orange')
+        })
         ftDivs.forEach((ft, ftindex) => {
             index === ftindex? ft.hidden = false: ft.hidden = true
+            btn
             console.log(index, ftindex)
         })
     })
 })
 
+const faqs = document.querySelector('details')
+const summaries = document.querySelector('summary')
+summaries.forEach(s => {
+    s.addEventListener('click', function(){
+        summaries.forEach(smry => {
+            smry.parentElement.open = false
+        })
+    })
+})

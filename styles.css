@@ -225,6 +225,10 @@ nav {
     text-align: left;
 }
 
+.feature-btns .orange{
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+}
+
 .ft-image {
     z-index: 100;
 }
